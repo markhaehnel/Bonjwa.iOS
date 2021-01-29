@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E3C4DFC1ACD9ECE22CC8AC3 /* Pods_Bonjwa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E8EEC66EB7DF236307459 /* Pods_Bonjwa.framework */; };
+		DD16C5EB25C47C51008DAC83 /* ScheduleItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EA25C47C51008DAC83 /* ScheduleItemData.swift */; };
+		DD16C5F025C47D17008DAC83 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EF25C47D17008DAC83 /* Observer.swift */; };
+		DD16C5F425C47D45008DAC83 /* EventItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5F325C47D45008DAC83 /* EventItemData.swift */; };
+		DD46F17825C463A700C2C0C6 /* BonjwaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F17725C463A700C2C0C6 /* BonjwaApp.swift */; };
+		DD46F17A25C463A700C2C0C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F17925C463A700C2C0C6 /* ContentView.swift */; };
+		DD46F17C25C463A700C2C0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD46F17B25C463A700C2C0C6 /* Assets.xcassets */; };
+		DD46F17F25C463A700C2C0C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD46F17E25C463A700C2C0C6 /* Preview Assets.xcassets */; };
+		DD46F19D25C468C600C2C0C6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD46F19C25C468C600C2C0C6 /* Localizable.strings */; };
+		DD46F1A425C46AEE00C2C0C6 /* ScheduleHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1A325C46AEE00C2C0C6 /* ScheduleHolder.swift */; };
+		DD46F1A725C46B6500C2C0C6 /* EventsHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1A625C46B6500C2C0C6 /* EventsHolder.swift */; };
+		DD46F1AD25C46F5600C2C0C6 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1AC25C46F5600C2C0C6 /* EventRow.swift */; };
+		DD46F1B325C4757A00C2C0C6 /* ScheduleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		261E8EEC66EB7DF236307459 /* Pods_Bonjwa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bonjwa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4FAB6022FA2E5516DD99CE /* Pods-Bonjwa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonjwa.release.xcconfig"; path = "Target Support Files/Pods-Bonjwa/Pods-Bonjwa.release.xcconfig"; sourceTree = "<group>"; };
+		868BF4C61372EFA30FD3AEA8 /* Pods-Bonjwa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonjwa.debug.xcconfig"; path = "Target Support Files/Pods-Bonjwa/Pods-Bonjwa.debug.xcconfig"; sourceTree = "<group>"; };
+		DD16C5EA25C47C51008DAC83 /* ScheduleItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemData.swift; sourceTree = "<group>"; };
+		DD16C5EF25C47D17008DAC83 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		DD16C5F325C47D45008DAC83 /* EventItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemData.swift; sourceTree = "<group>"; };
+		DD46F17425C463A700C2C0C6 /* Bonjwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bonjwa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD46F17725C463A700C2C0C6 /* BonjwaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjwaApp.swift; sourceTree = "<group>"; };
+		DD46F17925C463A700C2C0C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD46F17B25C463A700C2C0C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD46F17E25C463A700C2C0C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD46F18025C463A700C2C0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD46F19C25C468C600C2C0C6 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		DD46F1A325C46AEE00C2C0C6 /* ScheduleHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHolder.swift; sourceTree = "<group>"; };
+		DD46F1A625C46B6500C2C0C6 /* EventsHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsHolder.swift; sourceTree = "<group>"; };
+		DD46F1AC25C46F5600C2C0C6 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD46F17125C463A700C2C0C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3C4DFC1ACD9ECE22CC8AC3 /* Pods_Bonjwa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7916A99ED8B9C9013B7C69DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				261E8EEC66EB7DF236307459 /* Pods_Bonjwa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E7D220D106D3170E72F64F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				868BF4C61372EFA30FD3AEA8 /* Pods-Bonjwa.debug.xcconfig */,
+				7A4FAB6022FA2E5516DD99CE /* Pods-Bonjwa.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD16C5E925C47C2D008DAC83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD16C5F325C47D45008DAC83 /* EventItemData.swift */,
+				DD16C5EA25C47C51008DAC83 /* ScheduleItemData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD16C5EE25C47CFF008DAC83 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DD16C5EF25C47D17008DAC83 /* Observer.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DD46F16B25C463A700C2C0C6 = {
+			isa = PBXGroup;
+			children = (
+				DD46F17625C463A700C2C0C6 /* Bonjwa */,
+				DD46F17525C463A700C2C0C6 /* Products */,
+				8E7D220D106D3170E72F64F8 /* Pods */,
+				7916A99ED8B9C9013B7C69DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD46F17525C463A700C2C0C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD46F17425C463A700C2C0C6 /* Bonjwa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD46F17625C463A700C2C0C6 /* Bonjwa */ = {
+			isa = PBXGroup;
+			children = (
+				DD46F17725C463A700C2C0C6 /* BonjwaApp.swift */,
+				DD46F19A25C466E100C2C0C6 /* Views */,
+				DD16C5E925C47C2D008DAC83 /* Models */,
+				DD16C5EE25C47CFF008DAC83 /* Helper */,
+				DD46F17B25C463A700C2C0C6 /* Assets.xcassets */,
+				DD46F18025C463A700C2C0C6 /* Info.plist */,
+				DD46F19C25C468C600C2C0C6 /* Localizable.strings */,
+				DD46F17D25C463A700C2C0C6 /* Preview Content */,
+			);
+			path = Bonjwa;
+			sourceTree = "<group>";
+		};
+		DD46F17D25C463A700C2C0C6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD46F17E25C463A700C2C0C6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD46F19A25C466E100C2C0C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD46F1AA25C46B9000C2C0C6 /* Events */,
+				DD46F1A225C46AB500C2C0C6 /* Schedule */,
+				DD46F17925C463A700C2C0C6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD46F1A225C46AB500C2C0C6 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */,
+				DD46F1A325C46AEE00C2C0C6 /* ScheduleHolder.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		DD46F1AA25C46B9000C2C0C6 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				DD46F1A625C46B6500C2C0C6 /* EventsHolder.swift */,
+				DD46F1AC25C46F5600C2C0C6 /* EventRow.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD46F17325C463A700C2C0C6 /* Bonjwa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD46F18325C463A700C2C0C6 /* Build configuration list for PBXNativeTarget "Bonjwa" */;
+			buildPhases = (
+				39F566723CF079E232984847 /* [CP] Check Pods Manifest.lock */,
+				DD46F17025C463A700C2C0C6 /* Sources */,
+				DD46F17125C463A700C2C0C6 /* Frameworks */,
+				DD46F17225C463A700C2C0C6 /* Resources */,
+				5DD24BE41FD3FFB874435536 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bonjwa;
+			productName = Bonjwa;
+			productReference = DD46F17425C463A700C2C0C6 /* Bonjwa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD46F16C25C463A700C2C0C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DD46F17325C463A700C2C0C6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = DD46F16F25C463A700C2C0C6 /* Build configuration list for PBXProject "Bonjwa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD46F16B25C463A700C2C0C6;
+			productRefGroup = DD46F17525C463A700C2C0C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD46F17325C463A700C2C0C6 /* Bonjwa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD46F17225C463A700C2C0C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD46F17F25C463A700C2C0C6 /* Preview Assets.xcassets in Resources */,
+				DD46F19D25C468C600C2C0C6 /* Localizable.strings in Resources */,
+				DD46F17C25C463A700C2C0C6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39F566723CF079E232984847 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bonjwa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DD24BE41FD3FFB874435536 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bonjwa/Pods-Bonjwa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bonjwa/Pods-Bonjwa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bonjwa/Pods-Bonjwa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD46F17025C463A700C2C0C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD46F1A425C46AEE00C2C0C6 /* ScheduleHolder.swift in Sources */,
+				DD16C5F425C47D45008DAC83 /* EventItemData.swift in Sources */,
+				DD16C5F025C47D17008DAC83 /* Observer.swift in Sources */,
+				DD46F17A25C463A700C2C0C6 /* ContentView.swift in Sources */,
+				DD46F1A725C46B6500C2C0C6 /* EventsHolder.swift in Sources */,
+				DD16C5EB25C47C51008DAC83 /* ScheduleItemData.swift in Sources */,
+				DD46F17825C463A700C2C0C6 /* BonjwaApp.swift in Sources */,
+				DD46F1B325C4757A00C2C0C6 /* ScheduleRow.swift in Sources */,
+				DD46F1AD25C46F5600C2C0C6 /* EventRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DD46F18125C463A700C2C0C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD46F18225C463A700C2C0C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD46F18425C463A700C2C0C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 868BF4C61372EFA30FD3AEA8 /* Pods-Bonjwa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Bonjwa/Preview Content\"";
+				DEVELOPMENT_TEAM = YQ9N3ULMTZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Bonjwa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.haehnel.bonjwa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD46F18525C463A700C2C0C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4FAB6022FA2E5516DD99CE /* Pods-Bonjwa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Bonjwa/Preview Content\"";
+				DEVELOPMENT_TEAM = YQ9N3ULMTZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Bonjwa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.haehnel.bonjwa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD46F16F25C463A700C2C0C6 /* Build configuration list for PBXProject "Bonjwa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD46F18125C463A700C2C0C6 /* Debug */,
+				DD46F18225C463A700C2C0C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD46F18325C463A700C2C0C6 /* Build configuration list for PBXNativeTarget "Bonjwa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD46F18425C463A700C2C0C6 /* Debug */,
+				DD46F18525C463A700C2C0C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD46F16C25C463A700C2C0C6 /* Project object */;
+}
