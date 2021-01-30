@@ -17,8 +17,8 @@ struct ScheduleItemData : Decodable {
     
     func getFormatter() -> DateFormatter {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .none
-        dateFormatter.timeStyle = .short
+        dateFormatter.locale = Locale(identifier: "de_DE")
+        dateFormatter.dateFormat = "HH:mm"
         return dateFormatter
     }
 }

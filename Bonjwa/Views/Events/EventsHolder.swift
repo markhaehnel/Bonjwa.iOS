@@ -1,12 +1,19 @@
 import SwiftUI
 
 struct EventsHolder: View {
-    @ObservedObject var observed = Observer()
+    @EnvironmentObject var appState: AppState
     
     var body: some View {
         NavigationView {
-            List(observed.eventItems, id: \.title) { item in
-                EventRow(title: item.title, day: item.getDay(), month: item.getMonth())
+            List {
+                if (appState.eventItems.isEmpty) {
+                    Text(LocalizedStringKey("NoEventsPlanned"))
+                } else {
+                    ForEach(appState.eventItems, id: \.title) { item in
+                        EventRow(title: item.title, day: item.getDay(), month: item.getMonth())
+                            .help(item.title)
+                    }
+                }
             }
             .navigationTitle(LocalizedStringKey("Events"))
         }
@@ -16,5 +23,6 @@ struct EventsHolder: View {
 struct EventsHolder_Previews: PreviewProvider {
     static var previews: some View {
         EventsHolder()
+            .environmentObject(AppState())
     }
 }

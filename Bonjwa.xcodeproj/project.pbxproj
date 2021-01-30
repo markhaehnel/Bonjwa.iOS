@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E3C4DFC1ACD9ECE22CC8AC3 /* Pods_Bonjwa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E8EEC66EB7DF236307459 /* Pods_Bonjwa.framework */; };
 		DD16C5EB25C47C51008DAC83 /* ScheduleItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EA25C47C51008DAC83 /* ScheduleItemData.swift */; };
-		DD16C5F025C47D17008DAC83 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EF25C47D17008DAC83 /* Observer.swift */; };
+		DD16C5F025C47D17008DAC83 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EF25C47D17008DAC83 /* AppState.swift */; };
 		DD16C5F425C47D45008DAC83 /* EventItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5F325C47D45008DAC83 /* EventItemData.swift */; };
 		DD46F17825C463A700C2C0C6 /* BonjwaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F17725C463A700C2C0C6 /* BonjwaApp.swift */; };
 		DD46F17A25C463A700C2C0C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F17925C463A700C2C0C6 /* ContentView.swift */; };
@@ -20,6 +20,7 @@
 		DD46F1A725C46B6500C2C0C6 /* EventsHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1A625C46B6500C2C0C6 /* EventsHolder.swift */; };
 		DD46F1AD25C46F5600C2C0C6 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1AC25C46F5600C2C0C6 /* EventRow.swift */; };
 		DD46F1B325C4757A00C2C0C6 /* ScheduleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */; };
+		DD69531A25C5FBA70068602F /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69531925C5FBA70068602F /* DateUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,7 @@
 		7A4FAB6022FA2E5516DD99CE /* Pods-Bonjwa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonjwa.release.xcconfig"; path = "Target Support Files/Pods-Bonjwa/Pods-Bonjwa.release.xcconfig"; sourceTree = "<group>"; };
 		868BF4C61372EFA30FD3AEA8 /* Pods-Bonjwa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonjwa.debug.xcconfig"; path = "Target Support Files/Pods-Bonjwa/Pods-Bonjwa.debug.xcconfig"; sourceTree = "<group>"; };
 		DD16C5EA25C47C51008DAC83 /* ScheduleItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemData.swift; sourceTree = "<group>"; };
-		DD16C5EF25C47D17008DAC83 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		DD16C5EF25C47D17008DAC83 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		DD16C5F325C47D45008DAC83 /* EventItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemData.swift; sourceTree = "<group>"; };
 		DD46F17425C463A700C2C0C6 /* Bonjwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bonjwa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD46F17725C463A700C2C0C6 /* BonjwaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjwaApp.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		DD46F1A625C46B6500C2C0C6 /* EventsHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsHolder.swift; sourceTree = "<group>"; };
 		DD46F1AC25C46F5600C2C0C6 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 		DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRow.swift; sourceTree = "<group>"; };
+		DD69531925C5FBA70068602F /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,8 @@
 		DD16C5EE25C47CFF008DAC83 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				DD16C5EF25C47D17008DAC83 /* Observer.swift */,
+				DD16C5EF25C47D17008DAC83 /* AppState.swift */,
+				DD69531925C5FBA70068602F /* DateUtils.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -132,9 +135,9 @@
 		DD46F19A25C466E100C2C0C6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD46F17925C463A700C2C0C6 /* ContentView.swift */,
 				DD46F1AA25C46B9000C2C0C6 /* Events */,
 				DD46F1A225C46AB500C2C0C6 /* Schedule */,
-				DD46F17925C463A700C2C0C6 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,8 +145,8 @@
 		DD46F1A225C46AB500C2C0C6 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */,
 				DD46F1A325C46AEE00C2C0C6 /* ScheduleHolder.swift */,
+				DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				DD46F17125C463A700C2C0C6 /* Frameworks */,
 				DD46F17225C463A700C2C0C6 /* Resources */,
 				5DD24BE41FD3FFB874435536 /* [CP] Embed Pods Frameworks */,
+				DD45CE6225C6128F008717E4 /* Set version from Git */,
 			);
 			buildRules = (
 			);
@@ -264,6 +268,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bonjwa/Pods-Bonjwa-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DD45CE6225C6128F008717E4 /* Set version from Git */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set version from Git";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Update build version with number of commits\nBUILD_NUMBER=$(git rev-list HEAD | wc -l | tr -d ' ')\n\n# Set git SHA for this build\nGIT_SHA=$(git rev-parse --short HEAD)\n\n# Update version string with build number\nLINES_CHANGED=$(git status --porcelain | wc -l | tr -d ' ')\nPLIST_CHANGED=$(git status --porcelain | grep \"${INFOPLIST_FILE}\" | wc -l | tr -d ' ')\nif [ \"$LINES_CHANGED\" == \"1\" -a \"$PLIST_CHANGED\" == \"1\" ]; then\n    GIT_RELEASE_VERSION=$(git describe --tags --always)\nelse\n    GIT_RELEASE_VERSION=$(git describe --tags --always --dirty)\nfi\n\n# Update plist with new values\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${GIT_RELEASE_VERSION#*v}\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n/usr/libexec/PlistBuddy -c \"Set :GitSHA $GIT_SHA\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -273,11 +295,12 @@
 			files = (
 				DD46F1A425C46AEE00C2C0C6 /* ScheduleHolder.swift in Sources */,
 				DD16C5F425C47D45008DAC83 /* EventItemData.swift in Sources */,
-				DD16C5F025C47D17008DAC83 /* Observer.swift in Sources */,
+				DD16C5F025C47D17008DAC83 /* AppState.swift in Sources */,
 				DD46F17A25C463A700C2C0C6 /* ContentView.swift in Sources */,
 				DD46F1A725C46B6500C2C0C6 /* EventsHolder.swift in Sources */,
 				DD16C5EB25C47C51008DAC83 /* ScheduleItemData.swift in Sources */,
 				DD46F17825C463A700C2C0C6 /* BonjwaApp.swift in Sources */,
+				DD69531A25C5FBA70068602F /* DateUtils.swift in Sources */,
 				DD46F1B325C4757A00C2C0C6 /* ScheduleRow.swift in Sources */,
 				DD46F1AD25C46F5600C2C0C6 /* EventRow.swift in Sources */,
 			);

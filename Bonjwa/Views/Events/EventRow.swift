@@ -7,11 +7,6 @@ struct EventRow: View {
     
     var body: some View {
         HStack {
-            /*Text(date)
-                .foregroundColor(.secondary)
-                .padding(.trailing, 16)
-                .lineLimit(1)*/
-            
             VStack {
                 Text(day)
                     .font(.title2)

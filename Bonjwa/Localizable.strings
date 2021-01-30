@@ -2,3 +2,6 @@
 "AppSubtitle" = "Die Community App";
 "Schedule" = "Sendeplan";
 "Events" = "Events";
+"NoShowsToday"  = "Nicht auf Sendung.";
+"ScheduleNotPublished" = "Sendeplan noch nicht veröffentlicht.";
+"NoEventsPlanned" = "Keine Events geplant.";

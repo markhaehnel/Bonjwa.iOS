@@ -7,5 +7,6 @@ target 'Bonjwa' do
 
   # Pods for Bonjwa
   pod 'Alamofire', '~> 5.2'
+  pod 'SwiftDate', '~> 6.3'
 
 end
