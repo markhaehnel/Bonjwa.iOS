@@ -8,14 +8,22 @@ struct ScheduleHolder: View {
     var body: some View {
         NavigationView {
             List {
-                if (appState.getSchedule(weekday: appState.scheduleWeekDays[selectedWeekday]).isEmpty && DateInRegion().weekday == 6) {
-                    Text(LocalizedStringKey("ScheduleNotPublished"))
-                } else if (appState.getSchedule(weekday: appState.scheduleWeekDays[selectedWeekday]).isEmpty) {
-                    Text(LocalizedStringKey("NoShowsToday"))
-                } else {
-                    ForEach(appState.getSchedule(weekday: appState.scheduleWeekDays[selectedWeekday]), id: \.title) { item in
-                        ScheduleRow(title: item.title, caster: item.caster, startDate: item.getShortStartDate(), endDate: item.getShortEndDate())
+                switch appState.scheduleItems {
+                case .success(let scheduleItems):
+                    if (ScheduleUtils.getSchedule(scheduleItems: scheduleItems, weekday: ScheduleUtils.scheduleWeekDays[selectedWeekday]).isEmpty && DateInRegion().weekday == 2) {
+                        Text(LocalizedStringKey("ScheduleNotPublished"))
+                    } else if (ScheduleUtils.getSchedule(scheduleItems: scheduleItems, weekday: ScheduleUtils.scheduleWeekDays[selectedWeekday]).isEmpty) {
+                        Text(LocalizedStringKey("NoShowsToday"))
+                    } else {
+                        ForEach(ScheduleUtils.getSchedule(scheduleItems: scheduleItems, weekday: ScheduleUtils.scheduleWeekDays[selectedWeekday]), id: \.title) { item in
+                            ScheduleRow(title: item.title, caster: item.caster, startDate: item.getShortStartDate(), endDate: item.getShortEndDate())
+                        }
                     }
+                case .failure(_):
+                    Text(LocalizedStringKey("ErrorFetchingData"))
+                default:
+                    ProgressView()
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
                 }
             }
             .navigationTitle(DateUtils.weekDaysLong[selectedWeekday])
@@ -28,7 +36,7 @@ struct ScheduleHolder: View {
                     }
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.bottom, 8)
-                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 400, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .frame(minWidth: 0/*@END_MENU_TOKEN@*/, idealWidth: 400, maxWidth: /*@START_MENU_TOKEN@*/.infinity)
                 }
             }
         }

@@ -1,4 +1,5 @@
 import SwiftUI
+import Alamofire
 
 struct EventsHolder: View {
     @EnvironmentObject var appState: AppState
@@ -6,13 +7,20 @@ struct EventsHolder: View {
     var body: some View {
         NavigationView {
             List {
-                if (appState.eventItems.isEmpty) {
-                    Text(LocalizedStringKey("NoEventsPlanned"))
-                } else {
-                    ForEach(appState.eventItems, id: \.title) { item in
-                        EventRow(title: item.title, day: item.getDay(), month: item.getMonth())
-                            .help(item.title)
+                switch appState.eventItems {
+                case .success(let eventItems):
+                    if (eventItems.count == 0) {
+                        Text(LocalizedStringKey("NoEventsPlanned"))
+                    } else {
+                        ForEach(eventItems, id: \.title) { item in
+                            EventRow(title: item.title, day: item.getDay(), month: item.getMonth())
+                        }
                     }
+                case .failure(_):
+                    Text(LocalizedStringKey("ErrorFetchingData"))
+                default:
+                    ProgressView()
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
                 }
             }
             .navigationTitle(LocalizedStringKey("Events"))

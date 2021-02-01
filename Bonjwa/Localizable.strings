@@ -5,3 +5,5 @@
 "NoShowsToday"  = "Nicht auf Sendung.";
 "ScheduleNotPublished" = "Sendeplan noch nicht veröffentlicht.";
 "NoEventsPlanned" = "Keine Events geplant.";
+"ErrorFetchingData" = "Fehler beim Abrufen der Daten.";
+"LoadingData" = "Lade Daten...";

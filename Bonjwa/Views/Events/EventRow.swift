@@ -16,7 +16,7 @@ struct EventRow: View {
                     .lineLimit(1)
             }
             .font(.subheadline)
-            .padding(.trailing, 16)
+            .padding(.horizontal, 12)
             
             Text(title)
                 .font(.title2)

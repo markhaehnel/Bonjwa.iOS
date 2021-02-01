@@ -1,9 +1,6 @@
 import Foundation
 import SwiftDate
 
-//public let weekDays = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
-
-
 struct DateUtils {
     static private let weekdayMap = [
         1: 6,

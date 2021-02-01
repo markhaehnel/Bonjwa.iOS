@@ -21,6 +21,7 @@
 		DD46F1AD25C46F5600C2C0C6 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1AC25C46F5600C2C0C6 /* EventRow.swift */; };
 		DD46F1B325C4757A00C2C0C6 /* ScheduleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */; };
 		DD69531A25C5FBA70068602F /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69531925C5FBA70068602F /* DateUtils.swift */; };
+		DD8053ED25C821C50076C490 /* ScheduleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8053EC25C821C50076C490 /* ScheduleUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DD46F1AC25C46F5600C2C0C6 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 		DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRow.swift; sourceTree = "<group>"; };
 		DD69531925C5FBA70068602F /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		DD8053EC25C821C50076C490 /* ScheduleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				DD16C5EF25C47D17008DAC83 /* AppState.swift */,
 				DD69531925C5FBA70068602F /* DateUtils.swift */,
+				DD8053EC25C821C50076C490 /* ScheduleUtils.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			files = (
 				DD46F1A425C46AEE00C2C0C6 /* ScheduleHolder.swift in Sources */,
 				DD16C5F425C47D45008DAC83 /* EventItemData.swift in Sources */,
+				DD8053ED25C821C50076C490 /* ScheduleUtils.swift in Sources */,
 				DD16C5F025C47D17008DAC83 /* AppState.swift in Sources */,
 				DD46F17A25C463A700C2C0C6 /* ContentView.swift in Sources */,
 				DD46F1A725C46B6500C2C0C6 /* EventsHolder.swift in Sources */,
@@ -441,7 +445,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.haehnel.bonjwa;
+				PRODUCT_BUNDLE_IDENTIFIER = de.markhaehnel.bonjwa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,7 +468,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.haehnel.bonjwa;
+				PRODUCT_BUNDLE_IDENTIFIER = de.markhaehnel.bonjwa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
