@@ -8,11 +8,17 @@ struct BonjwaApp: App {
     }
     
     let appState = AppState()
+    @Environment(\.scenePhase) var scenePhase
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(appState)
+        }
+        .onChange(of: scenePhase) { phase in
+            if (phase == .active) {
+                appState.fetchAll()
+            }
         }
     }
 }

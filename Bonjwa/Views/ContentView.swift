@@ -2,12 +2,12 @@ import SwiftUI
 
 struct ContentView: View {
     
-    init () {
+    init() {
         UITabBar.appearance().barTintColor = UIColor.secondarySystemBackground
     }
     
     var body: some View {
-        TabView() {
+        TabView {
             ScheduleHolder()
                 .tabItem {
                     Image(systemName: "calendar")

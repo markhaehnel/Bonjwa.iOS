@@ -19,11 +19,21 @@ struct EventsHolder: View {
                 case .failure(_):
                     Text(LocalizedStringKey("ErrorFetchingData"))
                 default:
-                    ProgressView()
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+                    Group {}
                 }
             }
             .navigationTitle(LocalizedStringKey("Events"))
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: appState.fetchAll) {
+                        if (appState.isEventsLoading) {
+                            ProgressView()
+                        } else {
+                            Image(systemName: "arrow.clockwise")
+                        }
+                    }
+                }
+            }
         }
     }
 }
