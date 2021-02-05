@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E3C4DFC1ACD9ECE22CC8AC3 /* Pods_Bonjwa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E8EEC66EB7DF236307459 /* Pods_Bonjwa.framework */; };
 		DD16C5EB25C47C51008DAC83 /* ScheduleItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EA25C47C51008DAC83 /* ScheduleItemData.swift */; };
 		DD16C5F025C47D17008DAC83 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EF25C47D17008DAC83 /* AppState.swift */; };
 		DD16C5F425C47D45008DAC83 /* EventItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5F325C47D45008DAC83 /* EventItemData.swift */; };
@@ -21,13 +20,12 @@
 		DD46F1AD25C46F5600C2C0C6 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1AC25C46F5600C2C0C6 /* EventRow.swift */; };
 		DD46F1B325C4757A00C2C0C6 /* ScheduleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */; };
 		DD69531A25C5FBA70068602F /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69531925C5FBA70068602F /* DateUtils.swift */; };
+		DD7BA2B325CDB0A100581586 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = DD7BA2B225CDB0A100581586 /* SwiftDate */; };
+		DD7BA2B725CDB0D200581586 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DD7BA2B625CDB0D200581586 /* Alamofire */; };
 		DD8053ED25C821C50076C490 /* ScheduleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8053EC25C821C50076C490 /* ScheduleUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		261E8EEC66EB7DF236307459 /* Pods_Bonjwa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bonjwa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A4FAB6022FA2E5516DD99CE /* Pods-Bonjwa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonjwa.release.xcconfig"; path = "Target Support Files/Pods-Bonjwa/Pods-Bonjwa.release.xcconfig"; sourceTree = "<group>"; };
-		868BF4C61372EFA30FD3AEA8 /* Pods-Bonjwa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonjwa.debug.xcconfig"; path = "Target Support Files/Pods-Bonjwa/Pods-Bonjwa.debug.xcconfig"; sourceTree = "<group>"; };
 		DD16C5EA25C47C51008DAC83 /* ScheduleItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemData.swift; sourceTree = "<group>"; };
 		DD16C5EF25C47D17008DAC83 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		DD16C5F325C47D45008DAC83 /* EventItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemData.swift; sourceTree = "<group>"; };
@@ -51,30 +49,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E3C4DFC1ACD9ECE22CC8AC3 /* Pods_Bonjwa.framework in Frameworks */,
+				DD7BA2B325CDB0A100581586 /* SwiftDate in Frameworks */,
+				DD7BA2B725CDB0D200581586 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7916A99ED8B9C9013B7C69DB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				261E8EEC66EB7DF236307459 /* Pods_Bonjwa.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8E7D220D106D3170E72F64F8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				868BF4C61372EFA30FD3AEA8 /* Pods-Bonjwa.debug.xcconfig */,
-				7A4FAB6022FA2E5516DD99CE /* Pods-Bonjwa.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		DD16C5E925C47C2D008DAC83 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +81,6 @@
 			children = (
 				DD46F17625C463A700C2C0C6 /* Bonjwa */,
 				DD46F17525C463A700C2C0C6 /* Products */,
-				8E7D220D106D3170E72F64F8 /* Pods */,
-				7916A99ED8B9C9013B7C69DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,11 +150,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD46F18325C463A700C2C0C6 /* Build configuration list for PBXNativeTarget "Bonjwa" */;
 			buildPhases = (
-				39F566723CF079E232984847 /* [CP] Check Pods Manifest.lock */,
 				DD46F17025C463A700C2C0C6 /* Sources */,
 				DD46F17125C463A700C2C0C6 /* Frameworks */,
 				DD46F17225C463A700C2C0C6 /* Resources */,
-				5DD24BE41FD3FFB874435536 /* [CP] Embed Pods Frameworks */,
 				DD45CE6225C6128F008717E4 /* Set version from Git */,
 			);
 			buildRules = (
@@ -182,6 +160,10 @@
 			dependencies = (
 			);
 			name = Bonjwa;
+			packageProductDependencies = (
+				DD7BA2B225CDB0A100581586 /* SwiftDate */,
+				DD7BA2B625CDB0D200581586 /* Alamofire */,
+			);
 			productName = Bonjwa;
 			productReference = DD46F17425C463A700C2C0C6 /* Bonjwa.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +191,10 @@
 				Base,
 			);
 			mainGroup = DD46F16B25C463A700C2C0C6;
+			packageReferences = (
+				DD7BA2B125CDB0A100581586 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				DD7BA2B525CDB0D200581586 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DD46F17525C463A700C2C0C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,45 +218,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		39F566723CF079E232984847 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bonjwa-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5DD24BE41FD3FFB874435536 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bonjwa/Pods-Bonjwa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bonjwa/Pods-Bonjwa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bonjwa/Pods-Bonjwa-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DD45CE6225C6128F008717E4 /* Set version from Git */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,7 +378,6 @@
 		};
 		DD46F18425C463A700C2C0C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 868BF4C61372EFA30FD3AEA8 /* Pods-Bonjwa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,7 +401,6 @@
 		};
 		DD46F18525C463A700C2C0C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A4FAB6022FA2E5516DD99CE /* Pods-Bonjwa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -499,6 +444,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD7BA2B125CDB0A100581586 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+		DD7BA2B525CDB0D200581586 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD7BA2B225CDB0A100581586 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD7BA2B125CDB0A100581586 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		DD7BA2B625CDB0D200581586 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD7BA2B525CDB0D200581586 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD46F16C25C463A700C2C0C6 /* Project object */;
 }
