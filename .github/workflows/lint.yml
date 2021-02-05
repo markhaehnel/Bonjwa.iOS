@@ -13,3 +13,13 @@ jobs:
 
       - name: Lint code
         run: swiftformat --lint .
+
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build app
+        run: xcodebuild -destination "platform=iOS Simulator,name=iPhone 12 Pro Max" -scheme "Bonjwa"
