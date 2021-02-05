@@ -20,6 +20,7 @@
 		DD46F1AD25C46F5600C2C0C6 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1AC25C46F5600C2C0C6 /* EventRow.swift */; };
 		DD46F1B325C4757A00C2C0C6 /* ScheduleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */; };
 		DD69531A25C5FBA70068602F /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69531925C5FBA70068602F /* DateUtils.swift */; };
+		DD70815725CDCF280022A140 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD70815625CDCF280022A140 /* README.md */; };
 		DD7BA2B325CDB0A100581586 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = DD7BA2B225CDB0A100581586 /* SwiftDate */; };
 		DD7BA2B725CDB0D200581586 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DD7BA2B625CDB0D200581586 /* Alamofire */; };
 		DD8053ED25C821C50076C490 /* ScheduleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8053EC25C821C50076C490 /* ScheduleUtils.swift */; };
@@ -41,6 +42,7 @@
 		DD46F1AC25C46F5600C2C0C6 /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 		DD46F1B225C4757A00C2C0C6 /* ScheduleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRow.swift; sourceTree = "<group>"; };
 		DD69531925C5FBA70068602F /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		DD70815625CDCF280022A140 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DD8053EC25C821C50076C490 /* ScheduleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 		DD46F16B25C463A700C2C0C6 = {
 			isa = PBXGroup;
 			children = (
+				DD70815625CDCF280022A140 /* README.md */,
 				DD46F17625C463A700C2C0C6 /* Bonjwa */,
 				DD46F17525C463A700C2C0C6 /* Products */,
 			);
@@ -211,6 +214,7 @@
 			files = (
 				DD46F17F25C463A700C2C0C6 /* Preview Assets.xcassets in Resources */,
 				DD46F19D25C468C600C2C0C6 /* Localizable.strings in Resources */,
+				DD70815725CDCF280022A140 /* README.md in Resources */,
 				DD46F17C25C463A700C2C0C6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
