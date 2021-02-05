@@ -2,7 +2,7 @@
 
 [![CI Build Status](https://img.shields.io/github/workflow/status/markhaehnel/Bonjwa.iOS/CI?style=for-the-badge)](https://github.com/markhaehnel/Bonjwa.iOS/actions?query=workflow%3ACI)
 [![License](https://img.shields.io/github/license/markhaehnel/Bonjwa.iOS?style=for-the-badge)](https://github.com/markhaehnel/Bonjwa.iOS/blob/master/LICENSE)
-[![Latest release](https://img.shields.io/github/v/tag/markhaehnel/Bonjwa.iOS?label=RELEASE&sort=semver&style=for-the-badge)](https://github.com/markhaehnel/Bonjwa.Android/releases)
+[![Latest release](https://img.shields.io/github/v/tag/markhaehnel/Bonjwa.iOS?label=RELEASE&sort=semver&style=for-the-badge)](https://github.com/markhaehnel/Bonjwa.iOS/releases)
 
 Check out the Bonjwa broadcast schedule on your smartphone!<br />
 Additionally, there is a possibility to get info about future events.
