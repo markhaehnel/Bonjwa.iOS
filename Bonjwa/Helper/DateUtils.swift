@@ -31,6 +31,6 @@ struct DateUtils {
     }
 
     static func getCurrentWeekdayIndex() -> Int {
-        return weekdayMap[DateInRegion().weekday]!
+        weekdayMap[DateInRegion().weekday]!
     }
 }
