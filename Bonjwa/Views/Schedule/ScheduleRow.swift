@@ -1,13 +1,12 @@
-import SwiftUI
 import SwiftDate
+import SwiftUI
 
 struct ScheduleRow: View {
     var scheduleItem: ScheduleItemData
-    
+
     @State var isUnfolded = false
-    
+
     var body: some View {
-        
         HStack {
             VStack {
                 Text(scheduleItem.getShortStartDate())
@@ -19,13 +18,13 @@ struct ScheduleRow: View {
             }
             .font(.subheadline)
             .padding(.horizontal, 12)
-            
-            VStack (alignment: .leading) {
+
+            VStack(alignment: .leading) {
                 Text(scheduleItem.title)
                     .font(.title2)
                     .lineLimit(1)
-                
-                if (!scheduleItem.caster.isEmpty) {
+
+                if !scheduleItem.caster.isEmpty {
                     Text(scheduleItem.caster)
                         .foregroundColor(.secondary)
                         .lineLimit(isUnfolded ? 3 : 1)
@@ -51,7 +50,7 @@ struct ScheduleRow_Previews: PreviewProvider {
             endDate: (DateInRegion() + 2.hours).date,
             cancelled: false
         )
-        
+
         Group {
             ScheduleRow(scheduleItem: scheduleItem)
             ScheduleRow(scheduleItem: scheduleItem)

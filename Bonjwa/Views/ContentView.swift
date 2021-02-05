@@ -1,11 +1,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     init() {
         UITabBar.appearance().barTintColor = UIColor.secondarySystemBackground
     }
-    
+
     var body: some View {
         TabView {
             ScheduleHolder()

@@ -4,7 +4,7 @@ struct EventRow: View {
     var title: String
     var day: String
     var month: String
-    
+
     var body: some View {
         HStack {
             VStack {
@@ -17,11 +17,11 @@ struct EventRow: View {
             }
             .font(.subheadline)
             .padding(.horizontal, 12)
-            
+
             Text(title)
                 .font(.title2)
                 .lineLimit(1)
-            
+
             Spacer()
         }
         .frame(minHeight: 70)
@@ -36,6 +36,5 @@ struct EventRow_Previews: PreviewProvider {
                 .preferredColorScheme(.dark)
         }
         .previewLayout(.fixed(width: 400, height: 80))
-        
     }
 }
