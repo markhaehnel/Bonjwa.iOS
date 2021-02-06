@@ -3,11 +3,11 @@ import SwiftDate
 
 class PreviewRunningScheduleItemData: ScheduleItemBase {
     override func isRunning() -> Bool {
-        return true
+        true
     }
 }
 
-struct PreviewData {
+enum PreviewData {
     static let mockRunningAndFuture = [
         PreviewRunningScheduleItemData(
             title: "For The King",
@@ -24,7 +24,7 @@ struct PreviewData {
             cancelled: false
         ),
     ]
-    
+
     static let mockRunningOnly = [
         PreviewRunningScheduleItemData(
             title: "For The King",
@@ -32,9 +32,9 @@ struct PreviewData {
             startDate: DateInRegion().date - 1.hours,
             endDate: (DateInRegion().date + 1.hours).date,
             cancelled: false
-        )
+        ),
     ]
-    
+
     static let mockFutureOnly = [
         ScheduleItemData(
             title: "For The King",
@@ -51,6 +51,6 @@ struct PreviewData {
             cancelled: false
         ),
     ]
-    
+
     static let mockEmpty: [ScheduleItemBase] = []
 }

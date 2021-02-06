@@ -3,7 +3,7 @@ import SwiftUI
 import WidgetKit
 
 struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> ScheduleEntry {
+    func placeholder(in _: Context) -> ScheduleEntry {
         ScheduleEntry(date: Date(), scheduleItems: [ScheduleItemData(
             title: "Judge Mental",
             caster: "Matteo",
@@ -13,12 +13,12 @@ struct Provider: TimelineProvider {
         )])
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (ScheduleEntry) -> ()) {
+    func getSnapshot(in _: Context, completion: @escaping (ScheduleEntry) -> Void) {
         let entry = ScheduleEntry(date: Date(), scheduleItems: PreviewData.mockRunningAndFuture)
         completion(entry)
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(in _: Context, completion: @escaping (Timeline<Entry>) -> Void) {
         let appState = AppState()
         appState.fetchScheduleItems(completion: { items in
             var entries: [ScheduleEntry]

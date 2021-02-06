@@ -13,7 +13,7 @@ final class AppState: ObservableObject {
         fetchEventItems()
     }
 
-    func fetchScheduleItems(completion: @escaping ((_ scheduleItems: [ScheduleItemData]) -> ()) = { _ in }) {
+    func fetchScheduleItems(completion: @escaping ((_ scheduleItems: [ScheduleItemData]) -> Void) = { _ in }) {
         isScheduleLoading = true
         DispatchQueue.global(qos: .background).async {
             let dateFormatter = DateFormatter()
