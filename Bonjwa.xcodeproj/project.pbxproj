@@ -10,6 +10,19 @@
 		DD16C5EB25C47C51008DAC83 /* ScheduleItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EA25C47C51008DAC83 /* ScheduleItemData.swift */; };
 		DD16C5F025C47D17008DAC83 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EF25C47D17008DAC83 /* AppState.swift */; };
 		DD16C5F425C47D45008DAC83 /* EventItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5F325C47D45008DAC83 /* EventItemData.swift */; };
+		DD3FBCC825CDDC5F00C472B6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3FBCC725CDDC5F00C472B6 /* WidgetKit.framework */; };
+		DD3FBCCA25CDDC5F00C472B6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3FBCC925CDDC5F00C472B6 /* SwiftUI.framework */; };
+		DD3FBCCD25CDDC5F00C472B6 /* BonjwaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FBCCC25CDDC5F00C472B6 /* BonjwaWidget.swift */; };
+		DD3FBCCF25CDDC6000C472B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3FBCCE25CDDC6000C472B6 /* Assets.xcassets */; };
+		DD3FBCD325CDDC6000C472B6 /* BonjwaWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD3FBCC525CDDC5F00C472B6 /* BonjwaWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD3FBCDC25CDDE4400C472B6 /* ScheduleItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EA25C47C51008DAC83 /* ScheduleItemData.swift */; };
+		DD3FBCDD25CDDE4400C472B6 /* ScheduleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8053EC25C821C50076C490 /* ScheduleUtils.swift */; };
+		DD3FBCDE25CDDE4400C472B6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5EF25C47D17008DAC83 /* AppState.swift */; };
+		DD3FBCDF25CDDE4400C472B6 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD69531925C5FBA70068602F /* DateUtils.swift */; };
+		DD3FBCE325CDDFBF00C472B6 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = DD3FBCE225CDDFBF00C472B6 /* SwiftDate */; };
+		DD3FBCE825CDE15900C472B6 /* EventItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD16C5F325C47D45008DAC83 /* EventItemData.swift */; };
+		DD3FBCEC25CDE19900C472B6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DD3FBCEB25CDE19900C472B6 /* Alamofire */; };
+		DD3FBCF925CDFB2500C472B6 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FBCF825CDFB2500C472B6 /* PreviewData.swift */; };
 		DD46F17825C463A700C2C0C6 /* BonjwaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F17725C463A700C2C0C6 /* BonjwaApp.swift */; };
 		DD46F17A25C463A700C2C0C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD46F17925C463A700C2C0C6 /* ContentView.swift */; };
 		DD46F17C25C463A700C2C0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD46F17B25C463A700C2C0C6 /* Assets.xcassets */; };
@@ -26,10 +39,41 @@
 		DD8053ED25C821C50076C490 /* ScheduleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8053EC25C821C50076C490 /* ScheduleUtils.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DD3FBCD125CDDC6000C472B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD46F16C25C463A700C2C0C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD3FBCC425CDDC5F00C472B6;
+			remoteInfo = BonjwaWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD3FBCD425CDDC6000C472B6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DD3FBCD325CDDC6000C472B6 /* BonjwaWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		DD16C5EA25C47C51008DAC83 /* ScheduleItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemData.swift; sourceTree = "<group>"; };
 		DD16C5EF25C47D17008DAC83 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		DD16C5F325C47D45008DAC83 /* EventItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemData.swift; sourceTree = "<group>"; };
+		DD3FBCC525CDDC5F00C472B6 /* BonjwaWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BonjwaWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3FBCC725CDDC5F00C472B6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DD3FBCC925CDDC5F00C472B6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DD3FBCCC25CDDC5F00C472B6 /* BonjwaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjwaWidget.swift; sourceTree = "<group>"; };
+		DD3FBCCE25CDDC6000C472B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD3FBCD025CDDC6000C472B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3FBCF825CDFB2500C472B6 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		DD46F17425C463A700C2C0C6 /* Bonjwa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bonjwa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD46F17725C463A700C2C0C6 /* BonjwaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjwaApp.swift; sourceTree = "<group>"; };
 		DD46F17925C463A700C2C0C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +91,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DD3FBCC225CDDC5F00C472B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3FBCCA25CDDC5F00C472B6 /* SwiftUI.framework in Frameworks */,
+				DD3FBCEC25CDE19900C472B6 /* Alamofire in Frameworks */,
+				DD3FBCC825CDDC5F00C472B6 /* WidgetKit.framework in Frameworks */,
+				DD3FBCE325CDDFBF00C472B6 /* SwiftDate in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD46F17125C463A700C2C0C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,11 +133,33 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		DD3FBCC625CDDC5F00C472B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD3FBCC725CDDC5F00C472B6 /* WidgetKit.framework */,
+				DD3FBCC925CDDC5F00C472B6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD3FBCCB25CDDC5F00C472B6 /* BonjwaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DD3FBCCC25CDDC5F00C472B6 /* BonjwaWidget.swift */,
+				DD3FBCF825CDFB2500C472B6 /* PreviewData.swift */,
+				DD3FBCCE25CDDC6000C472B6 /* Assets.xcassets */,
+				DD3FBCD025CDDC6000C472B6 /* Info.plist */,
+			);
+			path = BonjwaWidget;
+			sourceTree = "<group>";
+		};
 		DD46F16B25C463A700C2C0C6 = {
 			isa = PBXGroup;
 			children = (
 				DD70815625CDCF280022A140 /* README.md */,
 				DD46F17625C463A700C2C0C6 /* Bonjwa */,
+				DD3FBCCB25CDDC5F00C472B6 /* BonjwaWidget */,
+				DD3FBCC625CDDC5F00C472B6 /* Frameworks */,
 				DD46F17525C463A700C2C0C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				DD46F17425C463A700C2C0C6 /* Bonjwa.app */,
+				DD3FBCC525CDDC5F00C472B6 /* BonjwaWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +227,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DD3FBCC425CDDC5F00C472B6 /* BonjwaWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3FBCD725CDDC6000C472B6 /* Build configuration list for PBXNativeTarget "BonjwaWidgetExtension" */;
+			buildPhases = (
+				DD3FBCC125CDDC5F00C472B6 /* Sources */,
+				DD3FBCC225CDDC5F00C472B6 /* Frameworks */,
+				DD3FBCC325CDDC5F00C472B6 /* Resources */,
+				DD3FBCF525CDE66700C472B6 /* Set version from Git */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BonjwaWidgetExtension;
+			packageProductDependencies = (
+				DD3FBCE225CDDFBF00C472B6 /* SwiftDate */,
+				DD3FBCEB25CDE19900C472B6 /* Alamofire */,
+			);
+			productName = BonjwaWidgetExtension;
+			productReference = DD3FBCC525CDDC5F00C472B6 /* BonjwaWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DD46F17325C463A700C2C0C6 /* Bonjwa */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD46F18325C463A700C2C0C6 /* Build configuration list for PBXNativeTarget "Bonjwa" */;
@@ -157,10 +257,12 @@
 				DD46F17125C463A700C2C0C6 /* Frameworks */,
 				DD46F17225C463A700C2C0C6 /* Resources */,
 				DD45CE6225C6128F008717E4 /* Set version from Git */,
+				DD3FBCD425CDDC6000C472B6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DD3FBCD225CDDC6000C472B6 /* PBXTargetDependency */,
 			);
 			name = Bonjwa;
 			packageProductDependencies = (
@@ -180,6 +282,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					DD3FBCC425CDDC5F00C472B6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					DD46F17325C463A700C2C0C6 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -203,11 +308,20 @@
 			projectRoot = "";
 			targets = (
 				DD46F17325C463A700C2C0C6 /* Bonjwa */,
+				DD3FBCC425CDDC5F00C472B6 /* BonjwaWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DD3FBCC325CDDC5F00C472B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3FBCCF25CDDC6000C472B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD46F17225C463A700C2C0C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +336,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		DD3FBCF525CDE66700C472B6 /* Set version from Git */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set version from Git";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Update build version with number of commits\nBUILD_NUMBER=$(git rev-list HEAD | wc -l | tr -d ' ')\n\n# Update version string with build number\nLINES_CHANGED=$(git status --porcelain | wc -l | tr -d ' ')\nPLIST_CHANGED=$(git status --porcelain | grep \"${INFOPLIST_FILE}\" | wc -l | tr -d ' ')\nif [ \"$LINES_CHANGED\" == \"1\" -a \"$PLIST_CHANGED\" == \"1\" ]; then\n    GIT_RELEASE_VERSION=$(git describe --tags --always)\nelse\n    GIT_RELEASE_VERSION=$(git describe --tags --always --dirty)\nfi\n\n# Update plist with new values\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleShortVersionString\" \"${GIT_RELEASE_VERSION#*v}\"\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleVersion\" \"${BUILD_NUMBER}\"\n";
+		};
 		DD45CE6225C6128F008717E4 /* Set version from Git */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +375,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DD3FBCC125CDDC5F00C472B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3FBCF925CDFB2500C472B6 /* PreviewData.swift in Sources */,
+				DD3FBCCD25CDDC5F00C472B6 /* BonjwaWidget.swift in Sources */,
+				DD3FBCDC25CDDE4400C472B6 /* ScheduleItemData.swift in Sources */,
+				DD3FBCDF25CDDE4400C472B6 /* DateUtils.swift in Sources */,
+				DD3FBCDD25CDDE4400C472B6 /* ScheduleUtils.swift in Sources */,
+				DD3FBCDE25CDDE4400C472B6 /* AppState.swift in Sources */,
+				DD3FBCE825CDE15900C472B6 /* EventItemData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD46F17025C463A700C2C0C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,7 +409,61 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DD3FBCD225CDDC6000C472B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD3FBCC425CDDC5F00C472B6 /* BonjwaWidgetExtension */;
+			targetProxy = DD3FBCD125CDDC6000C472B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DD3FBCD525CDDC6000C472B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ9N3ULMTZ;
+				INFOPLIST_FILE = BonjwaWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.markhaehnel.bonjwa.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DD3FBCD625CDDC6000C472B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ9N3ULMTZ;
+				INFOPLIST_FILE = BonjwaWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.markhaehnel.bonjwa.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		DD46F18125C463A700C2C0C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -383,6 +583,7 @@
 		DD46F18425C463A700C2C0C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,6 +607,7 @@
 		DD46F18525C463A700C2C0C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -429,6 +631,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DD3FBCD725CDDC6000C472B6 /* Build configuration list for PBXNativeTarget "BonjwaWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3FBCD525CDDC6000C472B6 /* Debug */,
+				DD3FBCD625CDDC6000C472B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DD46F16F25C463A700C2C0C6 /* Build configuration list for PBXProject "Bonjwa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -469,6 +680,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DD3FBCE225CDDFBF00C472B6 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD7BA2B125CDB0A100581586 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		DD3FBCEB25CDE19900C472B6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD7BA2B525CDB0D200581586 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		DD7BA2B225CDB0A100581586 /* SwiftDate */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DD7BA2B125CDB0A100581586 /* XCRemoteSwiftPackageReference "SwiftDate" */;
