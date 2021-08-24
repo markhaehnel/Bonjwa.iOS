@@ -14,7 +14,7 @@ struct ScheduleHolder: View {
                 List {
                     switch appState.scheduleItems {
                     case let .success(scheduleItems):
-                        if ScheduleUtils.getSchedule(scheduleItems: scheduleItems, weekday: ScheduleUtils.scheduleWeekDays[selectedWeekday]).isEmpty && DateInRegion().weekday == 2 {
+                        if ScheduleUtils.getSchedule(scheduleItems: scheduleItems, weekday: ScheduleUtils.scheduleWeekDays[selectedWeekday]).isEmpty, DateInRegion().weekday == 2 {
                             Text(LocalizedStringKey("ScheduleNotPublished"))
                         } else if ScheduleUtils.getSchedule(scheduleItems: scheduleItems, weekday: ScheduleUtils.scheduleWeekDays[selectedWeekday]).isEmpty {
                             Text(LocalizedStringKey("NoShowsToday"))

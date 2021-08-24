@@ -4,7 +4,7 @@ struct EventRow: View {
     var title: String
     var datePart1: String
     var datePart2: String
-    
+
     @State var isUnfolded = false
 
     init(title: String, date: String) {
