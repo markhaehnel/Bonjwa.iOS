@@ -37,6 +37,7 @@
 		DD7BA2B325CDB0A100581586 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = DD7BA2B225CDB0A100581586 /* SwiftDate */; };
 		DD7BA2B725CDB0D200581586 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DD7BA2B625CDB0D200581586 /* Alamofire */; };
 		DD8053ED25C821C50076C490 /* ScheduleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8053EC25C821C50076C490 /* ScheduleUtils.swift */; };
+		DDAD8E3826CD532600BD8954 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD8E3726CD532600BD8954 /* CollectionExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		DD69531925C5FBA70068602F /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		DD70815625CDCF280022A140 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DD8053EC25C821C50076C490 /* ScheduleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleUtils.swift; sourceTree = "<group>"; };
+		DDAD8E3726CD532600BD8954 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				DD16C5EF25C47D17008DAC83 /* AppState.swift */,
 				DD69531925C5FBA70068602F /* DateUtils.swift */,
 				DD8053EC25C821C50076C490 /* ScheduleUtils.swift */,
+				DDAD8E3726CD532600BD8954 /* CollectionExtensions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD46F1A425C46AEE00C2C0C6 /* ScheduleHolder.swift in Sources */,
+				DDAD8E3826CD532600BD8954 /* CollectionExtensions.swift in Sources */,
 				DD16C5F425C47D45008DAC83 /* EventItemData.swift in Sources */,
 				DD8053ED25C821C50076C490 /* ScheduleUtils.swift in Sources */,
 				DD16C5F025C47D17008DAC83 /* AppState.swift in Sources */,

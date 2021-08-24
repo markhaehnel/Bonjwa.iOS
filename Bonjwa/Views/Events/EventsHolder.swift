@@ -13,7 +13,7 @@ struct EventsHolder: View {
                         Text(LocalizedStringKey("NoEventsPlanned"))
                     } else {
                         ForEach(eventItems, id: \.title) { item in
-                            EventRow(title: item.title, day: item.getDay(), month: item.getMonth())
+                            EventRow(title: item.title, date: item.date)
                         }
                     }
                 case .failure:

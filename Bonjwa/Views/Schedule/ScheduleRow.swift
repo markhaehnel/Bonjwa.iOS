@@ -32,6 +32,7 @@ struct ScheduleRow: View {
             }
             Spacer()
         }
+        .opacity(scheduleItem.cancelled ? 0.3 : 1)
         .padding(.vertical, 8)
         .frame(minHeight: 70)
         .contentShape(Rectangle())

@@ -41,14 +41,7 @@ final class AppState: ObservableObject {
     func fetchEventItems() {
         isEventsLoading = true
         DispatchQueue.global(qos: .background).async {
-            let dateFormatter = DateFormatter()
-            dateFormatter.locale = Locale(identifier: "de_DE")
-            dateFormatter.dateFormat = "d. MMMM"
-
-            let decoder = JSONDecoder()
-            decoder.dateDecodingStrategy = .formatted(dateFormatter)
-
-            AF.request("https://api.bonjwa.ezhub.de/events").validate().responseDecodable(of: [EventItemData].self, decoder: decoder) { response in
+            AF.request("https://api.bonjwa.ezhub.de/events").validate().responseDecodable(of: [EventItemData].self) { response in
                 DispatchQueue.main.async {
                     self.eventItems = response.result
                     self.isEventsLoading = false
