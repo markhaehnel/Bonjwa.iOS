@@ -261,6 +261,7 @@
 				DD46F17225C463A700C2C0C6 /* Resources */,
 				DD45CE6225C6128F008717E4 /* Set version from Git */,
 				DD3FBCD425CDDC6000C472B6 /* Embed App Extensions */,
+				DD250C3626D55C8100C1884F /* Lint with SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -339,6 +340,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		DD250C3626D55C8100C1884F /* Lint with SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Lint with SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftformat --lint .\n";
+		};
 		DD3FBCF525CDE66700C472B6 /* Set version from Git */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
